@@ -17,8 +17,6 @@
 <script lang="ts" setup>
 import type { Task } from '@/types';
 const notesStore = useNotesStore()
-const emit = defineEmits(['AddTask'])
-
 const listWrap = ref<HTMLElement | null>(null)
 
 const tasks = defineModel<Task[]>();
