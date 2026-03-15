@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+    font-family: 'Manrope', sans-serif;
+}
+
+html, body {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+    background: $color-bg;
+    color: $color-text;
+    @include font-14-normal;
+}
+
+div::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    @include font-14-normal;
+    color: $color-text;
+}
+
+a:focus, a:active {
+    outline: none
+}
+
+a.link {
+    @include font-14-normal;
+}
+
+ol, ul {
+    margin-left: 20px;
+}
+
+pre, code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 80ch;       
+}
+
+.info-text p {
+    margin-bottom: 24px;
+}
+.info-text h1, .info-text h2, .info-text h3 {
+    margin-bottom: 12px;
+}
+
+.info-text ul, .info-text ol {
+    margin-bottom: 28px;
+}
+
+h1, h2, h3 {
+    line-height: 110%;
+    text-align: center;
+}
+
+.main-content {
+    margin: 0 auto;
+    width: calc(100% - 112px);
+    max-width: 980px;
+    padding-top: 32px;
+    overflow: hidden;
+    @media (max-width: $min-screen) {
+        width: calc(100% - 64px);
+    }
+
+}
+
+.title {
+    @include font-24-bold;
+    margin-bottom: 32px;
+    text-align: center;
+}

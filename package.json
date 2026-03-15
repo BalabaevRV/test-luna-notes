@@ -1,0 +1,33 @@
+{
+  "name": "test-luna",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --ext .vue,.js,.ts,.mjs",
+    "lint:fix": "eslint . --ext .vue,.js,.ts,.mjs --fix"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.15.2",
+    "@pinia/nuxt": "^0.11.3",
+    "@vueuse/core": "^14.2.1",
+    "nuxt": "^3.21.2",
+    "pinia-plugin-persistedstate": "^4.7.1",
+    "vue": "^3.5.30",
+    "vue-router": "^5.0.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
+    "@vue/eslint-config-typescript": "^14.7.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.1",
+    "sass": "^1.98.0",
+    "typescript": "^5.9.3"
+  }
+}

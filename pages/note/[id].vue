@@ -1,0 +1,3 @@
+<template>
+    <note-component />
+</template>
