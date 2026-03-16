@@ -45,7 +45,7 @@
                 border: 2px solid rgba(0, 0, 0, 0);
                 border-left: 0;
                 border-bottom: 0;
-                top: 5px;
+                top: 6px;
                 left: 3px;
                 -webkit-transform-origin: left top;
                 -ms-transform-origin: left top;
