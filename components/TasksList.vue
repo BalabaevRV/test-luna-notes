@@ -32,28 +32,12 @@ const addTask = async () => {
     }) 
 }
 
-const ScrollToLastTask = () => {
-        if (listWrap.value) {
-        listWrap.value.scrollTo({top: listWrap.value.scrollHeight})
-    }
-    
-    const newTaskInput = document.querySelector(
-        `.tasks-item-wrap:last-child .tasks-item-input`
-    ) as HTMLInputElement
-    if (newTaskInput) {
-        newTaskInput.focus()
-    }
-}
-
 const taskChecboxHandler = (task: Task) => {
     if (!task.name) {
         task.error = 'Укажите имя задачи'
     }
 }
 
-defineExpose({
-    ScrollToLastTask
-})
 </script>
 
 <style lang="scss" scoped>
