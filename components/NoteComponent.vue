@@ -24,10 +24,6 @@
     const route = useRoute()
 
 
-    const tasksListRef = ref<{
-        ScrollToLastTask: () => void
-    } | null>(null)
-
     const cancelEditDialog = ref(false)
     const deleteConfirmationDialog = ref(false)
     const notesStore = useNotesStore()
@@ -71,17 +67,21 @@
     }
 
     const saveNote = () => {
-            if (checkAllTasksHaveName()) {
-            if (currentNote.value.name) { 
-            if (id.value) {
-                notesStore.updateNote(String(id.value), currentNote.value)
-            } else {
-                notesStore.addNote(currentNote.value)
+
+        if (!checkAllTasksHaveName()) {
+            return;
+        }
+         if (!currentNote.value.name) {
+            error.value = 'Укажите название заметки';
+            return;
+        }
+
+        if (id.value) {
+            notesStore.updateNote(String(id.value), currentNote.value)
+        } else {
+            notesStore.addNote(currentNote.value)
         }
             navigateTo(`/`)
-        } else {
-            error.value = 'Укажите название заметки'
-        } }
     }
 
     const handleAddTask = () => {
