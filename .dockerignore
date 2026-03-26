@@ -1,0 +1,41 @@
+# Зависимости
+node_modules
+.npm
+.yarn
+
+# Сборка
+.nuxt
+.output
+dist
+
+# Локальные файлы
+.env
+.env.local
+.env.*.local
+*.log
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Тесты
+tests
+coverage
+*.test.js
+*.spec.js
+
+# Временные файлы
+*.tmp
+*.temp
+.DS_Store
